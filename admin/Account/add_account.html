@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Add Account</title>
+    <link rel="stylesheet" href="../css/style1.css">
 </head>
 
 <body>
@@ -44,58 +44,52 @@
             </ul>
         </nav>
     </div>
-    <div class="admin-content">
-        <h1>Comment Users</h1>
-        <div class="search-container">
-            <input type="text" placeholder="Tìm kiếm..." class="search-input">
-            <button class="search-btn">Tìm kiếm</button>
+    <div class="container">
+        <div class="avatar-section">
+            <div class="avatar-content">
+                <img src="../../upload/img2.jpeg" alt="Avatar" class="avatar-image">
+            </div>
+            <div class="avatar" class="avatar">Avatar</div>
+            <input type="file" id="avatar" accept="image/*" class="avatar-input">
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Id user comment</th> 
-                    <th>Người gửi</th>
-                    <th>Nội dung</th>
-                    <th>Ngày gửi</th>
-                    <th>Hành động</th>
-                </tr>
-            </thead>
-            <tbody>
-    
-                <tr>
-                    <td>1</td>
-                    <td>Nguyễn Văn A</td>
-                    <td>Tôi rất hài lòng với sản phẩm!</td>
-                    <td>01-11-2023</td>
-                    <td>
-                        <button class="btn-delete">Xóa</button>
-                        <button class="btn-block-user">block user</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Nguyễn Long An</td>
-                    <td>Tôi rất hài lòng với sản phẩm!</td>
-                    <td>01-11-2023</td>
-                    <td>
-                        <button class="btn-delete">Xóa</button>
-                        <button class="btn-block-user">block user</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Vũ Minh Long</td>
-                    <td>Tôi rất hài lòng với sản phẩm!</td>
-                    <td>01-11-2023</td>
-                    <td>
-                        <button class="btn-delete">Xóa</button>
-                        <button class="btn-block-user">block user</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        
+        <div class="form-section">
+            <div class="input-group">
+                <div class="name">Tên</div>
+                <input type="text" class="firstname" id="firstname"  placeholder="Họ">
+                <input type="text" id="lasttname"  placeholder="Tên">
+            </div>
+            <div class="input-group">
+                <div class="nameaccount">Tài khoản</div>
+                <input type="text" id="nameaccount" placeholder="">
+                <textarea id="text" class="text" rows="4" cols="48" placeholder="Ghi chú"></textarea>
+            </div>
+            <div class="input-group">
+                <div class="password">Password</div>
+                <input type="password" id="password" placeholder="Duong1234@">
+            </div>
+            <div class="input-group">
+                <div class="email">Email</div>
+                <input type="email" id="email" placeholder="mai123@gmail.com">
+            </div>
+            <div class="input-group">
+                <div class="phone">Phone</div>
+                <input type="tel" id="phone" placeholder="">
+            </div>
+            <div class="input-group">
+                <div class="address">Địa chỉ</div>
+                <input type="text" id="address" placeholder="">
+            </div>
+            <div class="input-group">
+                <div>Vai trò</div>
+                <input type="radio" id="individual" name="account-type">
+                <label class="individual">Quản lý</label>
+                <input type="radio" id="company" name="account-type">
+                <label class="company">Khách hàng</label>
+            </div>
+            <a href="show_account.html"> <input class="submit-btn" type="button" value="Next"></a>
+        </div>
     </div>
-    
 </body>
 
 </html>
